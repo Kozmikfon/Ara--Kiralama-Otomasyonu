@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5B3F58A-F9E2-46A6-9533-C96FB0B4D2A8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GaleriOtomasyonu</RootNamespace>
+    <AssemblyName>GaleriOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AracIslemleri.cs" />
+    <Compile Include="FrmAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaSayfa.Designer.cs">
+      <DependentUpon>FrmAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAracKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAracKayıt.Designer.cs">
+      <DependentUpon>FrmAracKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAracListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAracListele.Designer.cs">
+      <DependentUpon>FrmAracListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCikis.Designer.cs">
+      <DependentUpon>FrmCikis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonel.Designer.cs">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProgresbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProgresbar.Designer.cs">
+      <DependentUpon>FrmProgresbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmprogresBarr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmprogresBarr.Designer.cs">
+      <DependentUpon>FrmprogresBarr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSifremiUnuttum.Designer.cs">
+      <DependentUpon>FrmSifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYonetici.Designer.cs">
+      <DependentUpon>FrmYonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriList.Designer.cs">
+      <DependentUpon>FrmMusteriList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriUye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriUye.Designer.cs">
+      <DependentUpon>FrmMusteriUye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSatis.Designer.cs">
+      <DependentUpon>FrmSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSozlesme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSozlesme.Designer.cs">
+      <DependentUpon>FrmSozlesme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="galeriKisiselbilgiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>galeriKisiselbilgiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="galeriKisiselbilgiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>galeriKisiselbilgiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="galeriKisiselbilgiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>galeriKisiselbilgiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="galeriKisiselbilgiDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>galeriKisiselbilgiDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="galeriKisiselbilgiDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>galeriKisiselbilgiDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAnaSayfa.resx">
+      <DependentUpon>FrmAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAracKayıt.resx">
+      <DependentUpon>FrmAracKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAracListele.resx">
+      <DependentUpon>FrmAracListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCikis.resx">
+      <DependentUpon>FrmCikis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonel.resx">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProgresbar.resx">
+      <DependentUpon>FrmProgresbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmprogresBarr.resx">
+      <DependentUpon>FrmprogresBarr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSifremiUnuttum.resx">
+      <DependentUpon>FrmSifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYonetici.resx">
+      <DependentUpon>FrmYonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriList.resx">
+      <DependentUpon>FrmMusteriList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriUye.resx">
+      <DependentUpon>FrmMusteriUye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSatis.resx">
+      <DependentUpon>FrmSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSozlesme.resx">
+      <DependentUpon>FrmSozlesme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="galeriKisiselbilgiDataSet.xsc">
+      <DependentUpon>galeriKisiselbilgiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>galeriKisiselbilgiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet.xss">
+      <DependentUpon>galeriKisiselbilgiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet1.xsc">
+      <DependentUpon>galeriKisiselbilgiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>galeriKisiselbilgiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet1.xss">
+      <DependentUpon>galeriKisiselbilgiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet2.xsc">
+      <DependentUpon>galeriKisiselbilgiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>galeriKisiselbilgiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet2.xss">
+      <DependentUpon>galeriKisiselbilgiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet3.xsc">
+      <DependentUpon>galeriKisiselbilgiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>galeriKisiselbilgiDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet3.xss">
+      <DependentUpon>galeriKisiselbilgiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet4.xsc">
+      <DependentUpon>galeriKisiselbilgiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>galeriKisiselbilgiDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="galeriKisiselbilgiDataSet4.xss">
+      <DependentUpon>galeriKisiselbilgiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45de476cb72d73a2552ba432fbd6ebea.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modern Fotoğraf Araba Dergi Kapağı.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modern Fotoğraf Araba Dergi Kapağı.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123 Anywhere st. - any city. st 12345.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grey Modern Car for Sale Instagram Post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Modern Car for Sale Instagram Post %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Modern Car for Sale Instagram Post %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Modern Car for Sale Instagram Post %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanıcıGirişi.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\müşteriKaydı.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow and Blue Minimalist Giveaway For Member Instagram Post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gradient Car Auto Insurance Instagram Post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue White Minimalist Car Rental Pricelist Instagram Post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige and Green Minimalist Christmas Party Flyer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow and Blue Minimalist Giveaway For Member Instagram Post %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow and Blue Minimalist Giveaway For Member Instagram Post %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="galeriKisiselbilgi.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Mavi Turuncu Modern Minimalist Müşteri Hizmetleri İş İlanı Instagram Gönderisi.png" />
+    <None Include="Resources\Brown Modern Car for Sale Instagram Post %283%291.png" />
+    <None Include="Resources\Black Illustration Car Desktop Wallpaper1.png" />
+    <None Include="Resources\123 Anywhere st. - any city. st 12345 %282%291.png" />
+    <None Include="Resources\Grey Modern Car for Sale Instagram Post1.png" />
+    <None Include="Resources\Siyah Çarpıcı Araç Kiralama Afiş %282%291.png" />
+    <None Include="Resources\Siyah Çarpıcı Araç Kiralama Afiş %282%29.png" />
+    <None Include="Resources\Blue Modern Best Car Sale Car Rental Flyer2.png" />
+    <None Include="Resources\Blue Modern Best Car Sale Car Rental Flyer1.png" />
+    <None Include="Resources\Blue Modern Best Car Sale Car Rental Flyer.png" />
+    <None Include="Resources\Siyah Çarpıcı Araç Kiralama Afiş %281%29.png" />
+    <None Include="Resources\Yellow and Black Modern Car Rent Instagram Post %281%29.png" />
+    <None Include="Resources\Yellow and Black Modern Car Rent Instagram Post.png" />
+    <None Include="Resources\Black Glitch Car Promotion Instagram Post.png" />
+    <None Include="Resources\Black Illustration Car Desktop Wallpaper.png" />
+    <None Include="Resources\Siyah Çarpıcı Araç Kiralama Afiş.png" />
+    <None Include="Resources\Green Modern Customer Testimonials Instagram Post.png" />
+    <None Include="Resources\Automotive %28Poster %28Landscape%29%29.png" />
+    <None Include="Resources\123 Anywhere st. - any city. st 12345 %285%29.png" />
+    <None Include="Resources\123 Anywhere st. - any city. st 12345 %284%29.png" />
+    <None Include="Resources\Red White Black Minimalist Car Deals Youtube Thumbnail %281%29.png" />
+    <None Include="Resources\Red White Black Minimalist Car Deals Youtube Thumbnail.png" />
+    <None Include="Resources\123 Anywhere st. - any city. st 12345 %283%29.png" />
+    <None Include="Resources\123 Anywhere st. - any city. st 12345 %282%29.png" />
+    <None Include="Resources\Blue White Minimalist Car Rental Pricelist Instagram Post %281%29.png" />
+    <None Include="Resources\123 Anywhere st. - any city. st 12345 %281%29.png" />
+    <None Include="Resources\Brown Modern Car for Sale Instagram Post %285%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
